@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex | Lista de pokemons</title>
+    <meta
+      name="description"
+      content="Pokedex: Veja seus pokemons favoritos e seus elementos!"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pokedex</h1>
+      <ul data-js="pokedex" class="pokedex"></ul>
+      <section class="page-selector">
+        <button id="previous"><</button>
+        <div class="number-div">
+          <p id="current-page">1</p>
+        </div>
+        <button id="next">></button>
+      </section>
+    </div>
+  </body>
+</html>
