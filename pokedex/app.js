@@ -41,12 +41,14 @@ fetchPokemon(12, 0);
 
 const previous = document.getElementById("previous");
 const next = document.getElementById("next");
+const counter = document.getElementById("current-page");
 
 let currentPage = 1;
 const refreshPage = () => {
   ul.innerHTML = "";
+  counter.innerHTML = String(currentPage);
   const calc = (currentPage - 1) * 12;
-  const { x, y } = calc == 0 ? { x: 12, y: 0 } : { x: calc, y: calc };
+  const { x, y } = calc == 0 ? { x: 12, y: 0 } : { x: calc, y: 12 };
   fetchPokemon(x, y);
 };
 
